@@ -3,12 +3,15 @@ package one.digitalinnovation.basecamp;
 /**
  * Classe de exemplo para o exercício da Aula 1 de Métodos.
  */
-public class Mensagem {
+public class Mensagem{
 
+    public static void obterMensagem (int hora){
 
-    public static void obterMensagem(int hora) {
-
-        switch (hora) {
+        switch (hora){
+            case 1:
+            case 2:
+            case 3:
+            case 4:
             case 5:
             case 6:
             case 7:
@@ -33,28 +36,26 @@ public class Mensagem {
             case 22:
             case 23:
             case 0:
-            case 1:
-            case 2:
-            case 3:
-            case 4:
                 mensagemBoaNoite();
                 break;
             default:
-                System.out.println("Hora inválida.");
+                System.out.println("Hora inválida");
                 break;
-        }
-    }
 
+        }
+
+    }
     public static void mensagemBomDia() {
         System.out.println("Bom dia!");
     }
 
     public static void mensagemBoaTarde() {
-        System.out.println("Bom tarde!");
+        System.out.println("Boa tarde!");
     }
 
     public static void mensagemBoaNoite() {
-        System.out.println("Bom noite!");
+        System.out.println("Boa noite!");
     }
+
 
 }
